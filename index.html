@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>The University of Auckland Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="slee832.css" />
+    <script src="slee832.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="slee832.html"> <img src="http://redsox.uoa.auckland.ac.nz/ups/logo.svg" alt="CS logo" /></a>
+        </div>
+        
+        <div id="header">
+            <div id="res_btn" onclick="showNav('navbar')" ><img src="https://image.flaticon.com/icons/png/128/59/59165.png"/></div>
+            <ul id="navbar">
+                <li><a id="defaultOpen" class="tablinks" onclick="openTab(event, 'home')" href="#">Home</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'courses')" href="#">Courses</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'people')" href="#">People</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'news')" href="#">News</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'notices')" href="#">Notices</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'guestBook')" href="#">Guest Book</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="home" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+        <p>
+            Welcome to the University of Auckland's Department of Computer Science, the country's largest, most diverse, and most accomplished. The department was founded in 1981. It now has more than 50 academic staff and 80 research students, and an ever-growing cohort of undergraduates
+            The University of Auckland is ranked in the top 100 in the world for Computer Science, according to the <a href="https://www.topuniversities.com/university-rankings/university-subject-rankings/2018/computer-science-information-systems">2018 QS World University Rankings</a>.
+        </p>
+        <div id="wordFromHeadofDpt">
+            <img src="https://www.cs.auckland.ac.nz/en/about/ourdepartment/_jcr_content/par/contentblock/par/textimage/image.img.jpg/1517355324733.jpg" alt="Professor Robert Amor" />
+            Computers are pervasive, and impact on many aspects of our lives, from the enormous social impact of computer games, email, and the web, through booking airline tickets and navigation systems to banking.
+
+            We expect these systems to work correctly all the time and if they don't our lives can be seriously impacted. As a result, the need for Computer Science graduates has increased dramatically, leading to a skills shortage across the IT sector.
+
+            The Department of Computer Science at The University of Auckland is the largest department in New Zealand. We offer a very broad range of courses spanning almost all aspects of Computer Science.
+
+            The department has a strong research focus, with more than 40 academic staff actively undertaking research, much of it in collaboration with international researchers and local industry.
+
+            This means our degree programmes are leading edge, our graduates are well prepared for the challenges of the dynamic and fast growing software industry and are very well received by industry employers.
+
+            We look forward to seeing you in our classes in the near future.
+
+            Professor Robert Amor
+            Head of Department
+        </div>
+    </div>
+
+    <div id="courses" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+        <table id="courseTab"></table>
+    </div>
+
+    <div id="people" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+        <table id="peopleTab"></table>
+    </div>
+
+    <div id="news" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+    </div>
+
+    <div id="notices" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+    </div>
+
+    <div id="guestBook" class="tabcontent">
+        <h2>Department of Computer Science</h2>
+        <div>
+            <textarea id="name" rows="1" cols="20">Enter name</textarea>
+        </div>
+        <textarea id="words" rows="10" cols="50">Enter comment</textarea>
+        <div>
+            <input type="button" class='commentSubmit' onclick="commentPost(name);" value="Enter" />
+        </div>
+        <iframe id="commentList" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/htmlcomments"></iframe>
+    </div>
+    <footer>
+        <p>Copyright @Harry Lee</p>
+    </footer>
+</body>
+
+
+
+<script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</html>
